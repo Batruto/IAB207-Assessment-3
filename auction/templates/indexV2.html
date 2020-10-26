@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="{{ url_for('static',filename='CSS/style.css') }}" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+  <title>Game Auction</title>
+  </head>
+  <body>
+
+  
+<!-- Navbar content here -->
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <img src="{{url_for('static', filename='Images/GameShopLogo.png')}}" alt="">
+                <a class="navbar-brand" href="#">Game Auction Shop</a>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        
+                        <div class="topnav">
+                          <a href="/" class="active">Home</a>
+                          <a href="item-create">List Game</a>
+                          <a href="#contact">Contact Us</a>
+                          <a href="#login">Login / Sign Up</a>
+                        </div>
+
+                    </ul>
+                      
+                    
+                    <form class="form-inline mt-2 mt-md-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
+                    
+        </header>
+
+        <!-- Jumpatrone header with ref to image --> 
+        <header class="jumbotron top-header">
+          <header class = "jumbotron">
+          <div class="container text-center"> 
+            
+             <div class="p-3 mb-2 bg-dark text-white">
+              
+              <h1 class="display-4">The One Stop Shop to Sell Games</h1>
+            
+             </div>
+             <p><a href="item-create" class="btn btn-primary btn-lg" role="button">Create Listing</a></p>
+            
+          </div>
+          </header>
+      </header>
+
+    <!--Search Function-->
+    <div class="container">
+      <div class="row justify-content-center mt-5 pb-4">
+        <div class="col-md-8">
+          <div class="jumbotron shadow py-4 mb-5 ">
+            <h1 class="text-center">Find any game by typing the name here!</h1>
+
+              <input type="text" name="search" class="form-control flex-grow-1 my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <button type="submit" class="flex-shrink-1 btn btn-primary my-1">Submit</button>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+    <!-- Three columns of text below the carousel -->
+    <div class="container">
+      <div class="row">
+      <div class="col 12 col-md-4 ">
+        
+        <img src="{{url_for('static', filename='Images/XboxLogo.png')}}" class="rounded-circle mx-auto d-block" width="150" height= "150">
+        
+        <h2 class="text-center"> Xbox</h2>
+        <p> Discover the latest Xbox Games on Auction now!.</p>
+        <div class="col text-center">
+        <p><a class="btn btn-primary" href="item-details" role="button">Browse &raquo;</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+
+
+      <div class="col 12 col-md-4">
+        <img src="{{url_for('static', filename='Images/SteamLogo.png')}}" class="rounded-circle mx-auto d-block" width="150" height= "150">
+        <h2 class="text-center"> PC</h2>
+        <p>Discover the latest PC Games on Auction now!.</p>
+        <div class="col text-center">
+        <p><a class="btn btn-primary" href="item-details" role="button">Browse &raquo;</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div class="col 12 col-md-zzsxz4">
+
+        <img src="{{url_for('static', filename='Images/PS4Logo.jpg')}}" class="rounded-circle mx-auto d-block" width="150" height= "150">
+        <h2 class="text-center"> PS4</h2>
+        <p>Discover the latest PS4 Games on Auction now!.</p>
+        <div class="col text-center">
+        <p><a class="btn btn-primary" href="item-details" role="button">Browse &raquo;</a></p>
+        </div>
+        
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+  <hr>
+
+  <h1 class="text-center text-danger">Top 6 Winning Auctions!</h1>
+
+      <!-- First row of items-->
+            <div class="container">
+                <div class="row top-buffer">
+                    <div class="col-12 col-md-4">
+                        <div class="card border border-dark">
+                            <img src="{{url_for('static', filename='Images/Battlefield1.jpg')}}"class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Battfield 1</h3>
+                              <h4 class="card-title text-center">Current Bid: $120</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="btn-group mr-2"></div>
+                              <a href="item-details" class="btn btn-primary">View Details</a>
+                              <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border border-dark">
+                            <img src="{{url_for('static', filename='Images/Battlefront2.jpg')}}"class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Battlefront 2</h3>
+                              <h4 class="card-title text-center">Current Bid: $50</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="btn-group mr-2"></div>
+                              <a href="item-details" class="btn btn-primary">View Details</a>
+                              <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border border-dark">
+                            <img src="{{url_for('static', filename='Images/Jedi.jpg')}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Jedi:Fallen Order</h3>
+                              <h4 class="card-title text-center">Current Bid: $20</h4>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div class="btn-group mr-2"></div>
+                              <a href="item-details" class="btn btn-primary">View Details</a>
+                              <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                            </div>
+              
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Second row of items -->
+          <div class="container">
+              <div class="row top-buffer">
+                  <div class="col-12 col-md-4">
+                      <div class="card border border-dark">
+                          <img src="{{url_for('static', filename='Images/BatmanAC.jpg')}}" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title text-center">Batman Arkham City</h3>
+                            <h4 class="card-title text-center">Current Bid: $10</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group mr-2"></div>
+                              <a href="item-details" class="btn btn-primary">View Details</a>
+                              <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card border border-dark">
+                          <img src="{{url_for('static', filename='Images/Spiderman.jpg')}}" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title text-center">Spider-Man S.D</h3>
+                            <h4 class="card-title text-center">Current Bid: $5</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group mr-2"></div>
+                              <a href="item-details" class="btn btn-primary">View Details</a>
+                              <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card border border-dark">
+                          <img src="{{url_for('static', filename='Images/LegoSW.jpg')}}"class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title text-center">Lego Star Wars 2</h3>
+                            <h4 class="card-title text-center">Current Bid: $20</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                      
+                            <div class="btn-group mr-2"></div>
+                              <a href="item-details" class="btn btn-primary">View Details</a>
+                              <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                           
+                          </div>
+                    
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+
+          <h2 class="text-center">More Game Listings</h2>
+
+
+                  <!-- Third row of items -->
+                  <div class="container">
+                    <div class="row top-buffer">
+                        <div class="col-12 col-md-4">
+                            <div class="card border border-dark">
+                                <img src="{{url_for('static', filename='Images/MarvelAvengers.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h3 class="card-title text-center">Marvel's Avengers</h3>
+                                  <h4 class="card-title text-center">Current Bid: $50</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <div class="btn-group mr-2"></div>
+                                    <a href="item-details" class="btn btn-primary">View Details</a>
+                                    <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card border border-dark">
+                                <img src="{{url_for('static', filename='Images/GTAIV.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h3 class="card-title text-center">Grand Theft Auto:IV</h3>
+                                  <h4 class="card-title text-center">Current Bid: $5</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <div class="btn-group mr-2"></div>
+                                    <a href="item-details" class="btn btn-primary">View Details</a>
+                                    <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card border border-dark">
+                                <img src="{{url_for('static', filename='Images/Alien.jpg')}}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h3 class="card-title text-center">Alien: Isolation</h3>
+                                  <h4 class="card-title text-center">Current Bid: $20</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      
+                            
+                                  <div class="btn-group mr-2"></div>
+                                    <a href="item-details" class="btn btn-primary">View Details</a>
+                                    <a href="Watchlist" class="btn btn-secondary">Add To WatchList</a>
+                                 
+                                </div>
+                          
+                              </div>                              
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+

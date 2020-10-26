@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="{{ url_for('static',filename='CSS/style.css') }}" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+    <title>Item Page</title>
+  </head>
+  <body>
+
+  
+<!-- Navbar content here -->
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <img src="{{url_for('static', filename='Images/GameShopLogo.png')}}" alt="">
+                <a class="navbar-brand" href="#">Game Auction Shop</a>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        
+                        <div class="topnav">
+                          <a href="/" class="active">Home</a>
+                          <a href="item-create">List Game</a>
+                          <a href="#contact">Contact Us</a>
+                          <a href="#login">Login / Sign Up</a>
+                        </div>
+                    </ul>
+        
+                    <form class="form-inline mt-2 mt-md-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
+                    
+        </header>
+
+
+    <h1 class="top-auction-header text-center">Battlefront 2</h1>
+
+ <!-- First row of items-->
+ <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-4 center">
+            <div class="card border border-dark">
+                <img src="{{url_for('static', filename='Images/Battlefront2.jpg')}}" class="img-thumbnail" width="auto" height="auto" alt="...">
+              </div>
+        </div>
+    </div>
+</div>
+<h3 class="top-buffer text-center">Starting Bid: $20</h3>
+
+<!-- Platform -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="border border-dark">
+            <h5 style="padding: 1px 10px;">Platform:</h5>
+            <img src="{{url_for('static', filename='Images/PS4Logo.jpg')}}" class="rounded center" style="height: 60px; width:60px;" alt="..">
+        </div>
+    </div>
+</div>
+
+
+
+    <hr>
+
+    <h5 class="top-buffer text-center">Enter Your Bid Amount:</h5>
+
+    <!-- Enter Bid Amount & Input Group -->
+        <div class="container">
+            <div class="row justify-content-center">
+    
+                <div class="form-group"></div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="margin:0px 0 0; height: 50px; width:50px;">$</span>
+               
+                  <input type="text" class="form-control" style="margin:0px 0 0; height: 50px; width:250px;" aria-label="Amount (to the nearest dollar)">
+                  </div>
+                
+             <!--  <button type="submit" class="btn btn-primary mb-2">View Bidding History</button>  -->
+                </div>    
+            </div>
+         </form>
+     </div>
+</div>
+ 
+
+
+     <!-- Place Bid Button -->
+     <div class="container">
+        <div class="col-md-12 text-center top-buffer">
+            <button type="button" class="btn block btn-success">Place Bid</button>
+
+    <!-- WatchList Button -->
+     <div class="container">
+        <div class="col-md-12 text-center top-buffer">
+            <p><a class="btn block-secondary btn-secondary" href="Watchlist" role="button">Add To WatchList</a></p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+        <!-- Description Section -->
+        <div class="card text-center top-buffer">
+            <div class="card-header">
+            Game Description
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Star Wars: Battlefront 2</h5>
+              <p class="card-text">Star Wars Battlefront II is a 2017 action shooter video game based on the Star Wars film franchise. It is the fourth major installment of the Star Wars: Battlefront series and seventh overall, and a sequel to the 2015 reboot of the series..</p>
+            </div>
+
+          </div>
+
+          
+
+          <!-- Review Section -->
+          <div class="container-fluid px-0 py-5 mx-auto">
+            <div class="row justify-content-center mx-0 mx-md-auto">
+                <div class="col-lg-10 col-md-11 px-1 px-sm-2">
+                    <div class="card border-0 px-3">
+
+                        <div class="container">
+                            <div class="row justify-content-center mx-0 mx-md-auto">
+                    
+                            <div class="text-center" style="padding:20px 20px;"> <button class="btn btn-red px-4">WRITE A REVIEW</button> 
+                            </div>
+                          </div>
+                                
+                           
+                        </div> <!-- middle row -->
+                        <h5 class="card-title" style="padding:20px 20px;">User Reviews:</h5>
+
+                        <div class="row bg-light">
+                            <div class="col-md-2 col-4 text-center">
+                          
+                        </div> <!-- Review by user -->
+                        <div class="review p-5">
+                            <div class="row d-flex">
+                                <div class="profile-pic"><img src="{{url_for('static', filename='Images/UserReview.jpg')}}" width="60px" height="60px"></div>
+                                <div class="d-flex flex-column pl-3">
+                                    <h4>Rey</h4>
+                                    <p class="grey-text">30 min ago</p>
+                                </div>
+                            </div>
+                            <div class="row pb-3">
+                                <div class="fa fa-circle green-dot my-auto rating-dot"></div>
+                                <div class="fa fa-circle green-dot my-auto rating-dot"></div>
+                                <div class="fa fa-circle green-dot my-auto rating-dot"></div>
+                                <div class="fa fa-circle green-dot my-auto rating-dot"></div>
+                                <div class="fa fa-circle green-dot my-auto rating-dot"></div>
+                                <div class="green-text">
+                                    <h5 class="mb-0 pl-3">oUr vIsIon iS cOmPleTe</h5>
+                                </div>
+                            </div>
+                            <div class="row pb-3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestias impedit iusto labore atque aspernatur officiis, fugiat voluptatum ex ad esse quos consequuntur nam voluptas ipsam ullam saepe dignissimos non?.</p>
+                            </div>
+                        
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+      

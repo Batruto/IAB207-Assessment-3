@@ -1,0 +1,195 @@
+.jumbotron {
+    background: url("Images/background.jpg") no-repeat center;
+}
+.btn-primary {
+    background-color: #1778F7;
+    border-color: #1778F7;
+}
+
+/* Adds a Horizontal Line */
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1em;
+    border: 0;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+  }
+
+  /* Determines primary button size */
+  .block {
+    width: 25%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+    /* Determines secondary button size */
+    .block-secondary {
+      width: 25%;
+      border: none;
+      padding: 10px 10px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+
+/* Re-sizes the card images correctly */
+  .card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+/* Centers images correctly */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* Adds space betwen buttons */
+.btn-space {
+  margin-top: 10px ;
+  margin-left: 70px;
+}
+
+  /* Adds space between buttons */
+  .top-button { margin-top:10px; }
+
+  /* Adds space between rows */
+.top-buffer { margin-top:30px; }
+
+  /* Adds space between buttons in Watchlist */
+  .top-small-buffer { margin-top:10px; }
+
+  /* Adds space between header & jumbotron */
+.top-header { margin-top:130px; }
+
+ /* Adds space between game listing */
+ .top-auction-header { margin-top:150px;
+  margin-bottom:20px; }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #343a40;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid red;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid red;
+  }
+
+
+  /* USER REVIEW CSS */
+  body {
+    overflow-x: hidden
+}
+
+/* Changes Background Colour of Review Section */
+.container-fluid {
+    background-image: linear-gradient(to right, #0275d8, #5cb85c)
+}
+
+.sm-text {
+    font-size: 10px;
+    letter-spacing: 1px
+}
+
+.sm-text-1 {
+    font-size: 14px
+}
+
+.green-tab {
+    background-color: #00C853;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 3px 5px 3px
+}
+
+.btn-red {
+    background-color: #E64A19;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none
+}
+
+.btn-red:hover {
+    background-color: #BF360C
+}
+
+.btn-red:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.round-icon {
+    font-size: 40px;
+    padding-bottom: 10px
+}
+
+.fa-circle {
+    font-size: 10px;
+    color: #EEEEEF
+}
+
+.green-dot {
+    color: #4CAF50
+}
+
+.red-dot {
+    color: #E64A19
+}
+
+.yellow-dot {
+    color: #FFD54F
+}
+
+.grey-text {
+    color: #BDBDBD
+}
+
+.green-text {
+    color: #4CAF50
+}
+
+.block {
+    border-right: 1px solid #F5EEEE;
+    border-top: 1px solid #F5EEEE;
+    border-bottom: 1px solid #F5EEEE
+}
+
+.profile-pic img {
+    border-radius: 50%
+}
+
+.rating-dot {
+    letter-spacing: 5px
+}
+
+.via {
+    border-radius: 20px;
+    height: 28px
+}
