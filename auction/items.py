@@ -18,6 +18,8 @@ def view_item(id):
     cform = CommentForm()
     return render_template("items/show.html", item = item, form = cform)
 
+    ss
+
 # def check_upload_file(form):
 #     # get file data from form
 #     fp = form.image.data
